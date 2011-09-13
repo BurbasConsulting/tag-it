@@ -71,6 +71,8 @@
             // created for tag-it.
             tabIndex: null,
 
+            // Optionally set a tooltip class for use with plugins such as qTip, etc.
+            tooltipClass: null,
 
             // Event callbacks.
             onTagAdded  : null,
@@ -99,6 +101,12 @@
             this._tagInput = $('<input type="text" />').addClass('ui-widget-content');
             if (this.options.tabIndex) {
                 this._tagInput.attr('tabindex', this.options.tabIndex);
+            }
+            
+            // added this line to carry tooltips over to the new input box..
+            if (this.options.tooltipClass != null && this.element.hasClass(this.options.tooltipClass)) {
+                this.tagList.addClass(this.options.tooltipClass);
+                this.tagList.attr('title', this.element.attr('title'));
             }
 
             this.options.tagSource = this.options.tagSource || function(search, showChoices) {
