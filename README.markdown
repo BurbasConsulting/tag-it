@@ -1,6 +1,8 @@
 # Tag-it: a jQuery UI plugin
 
-Tag-it was originally inspired by the "tag suggestion" form field in ZenDesk.com. Now it is a full jQuery UI widget, supporting various configurations and themes.
+I've forked this project to add a few things I needed for a project:
+1. Tooltips would disappear when an inputbox was turned into a tagit box
+2. added simple field validation using http://bassistance.de/jquery-plugins/jquery-plugin-validation/
 
 
 ## Demo
@@ -59,6 +61,10 @@ This will turn the list into a tag-it list:
     </ul>
 
 There are several other possible configurations and ways to instantiate the widget, including one that uses a single comma-delimited `input` field rather than one per tag, so see the **Options** documentation below as well as the [examples page](http://aehlke.github.com/tag-it/examples.html) which demonstrates most of them.
+
+### Validation/Tooltips
+To use tooltips just pass the option "tooltipClass" with the name of the class that generates your tooltips.
+To use validation just pass the option "validate" with a "type" from here: http://bassistance.de/jquery-plugins/jquery-plugin-validation/. Upon an invalid tag it will remove the tag and call the onTagInvalid() callback
 
 
 ## Theming
