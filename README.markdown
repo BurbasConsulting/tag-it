@@ -6,6 +6,7 @@ Tag-it was originally inspired by the "tag suggestion" form field in ZenDesk.com
 ## Demo
 
 ![Screenshot](http://aehlke.github.com/tag-it/screenshot.png)
+![Tooltip](http://aehlke.github.com/tag-it/tooltip.png)
 
 Check the [example.html](http://aehlke.github.com/tag-it/example.html) for several demos.
 
